@@ -14,7 +14,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 RUN mv target/ysoserial-*all*.jar target/ysoserial.jar
 
-FROM java:8-jdk-alpine
+FROM java:8u111-jdk-alpine
 
 WORKDIR /app
 
